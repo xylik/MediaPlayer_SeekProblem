@@ -3,7 +3,7 @@ package io.honio.mplayerprecise;
 /**
  * Created by Igor on 24/10/16.
  */
-public interface MomentContract {
+public interface PlayerState {
     //region Player state constants
     /**
      * The player is neither prepared or being prepared.

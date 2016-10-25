@@ -19,30 +19,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/preparationTimeTxtV"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/videoView"-->
-        <!--android:layout_marginTop="16dp"-->
-        <!--android:lines="2"-->
-        <!--android:text="Preparation took:\nInitial buffer percent:"-->
-        <!--android:textSize="16sp"-->
-        <!--android:textColor="@android:color/black"-->
-        <!--android:background="#ffffff"-->
-        <!--android:padding="4dp"/>-->
-
-    <!--<TextView-->
-        <!--android:id="@+id/firstFrameRenderedTxtV"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/preparationTimeTxtV"-->
-        <!--android:text="Buffered percent:"-->
-        <!--android:textSize="16sp"-->
-        <!--android:textColor="@android:color/black"-->
-        <!--android:background="#ffffff"-->
-        <!--android:padding="4dp"/>-->
-
     <Button
         android:id="@+id/seekBtn"
         android:layout_width="100dp"

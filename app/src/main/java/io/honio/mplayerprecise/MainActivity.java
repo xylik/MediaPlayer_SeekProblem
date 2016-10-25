@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText seekTime;
     private Spinner fileChooser;
     private Button playPauseBtn;
-    private String[] fileNames = new String[] {"369", "371", "372", "373", "374", "375", "376", "378", "379", "zelena_maska"};
+//    private String[] fileNames = new String[] {"369", "371", "372", "373", "374", "375", "376", "378", "379", "zelena_maska"};
+    private String[] fileNames = new String[] {"371_ffmpeg_cut"};
     private String vequenceVideoDir;
 
     @Override
@@ -96,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
     private void setUiActions(boolean isEnable) {
         seekBtn.setEnabled(isEnable);

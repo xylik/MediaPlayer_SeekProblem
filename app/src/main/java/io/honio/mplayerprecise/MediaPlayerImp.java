@@ -204,7 +204,7 @@ public class MediaPlayerImp implements IPlayer {
             mMediaPlayer.setPlaybackSpeed(0.1f);
             mMediaPlayer.start();
             mCurrentState = STATE_PLAYING;
-            if(mPlayerStateChangeListener != null) mPlayerStateChangeListener.onPlayerStateChanged(playWhenReady, MomentContract.STATE_READY);
+            if(mPlayerStateChangeListener != null) mPlayerStateChangeListener.onPlayerStateChanged(playWhenReady, PlayerState.STATE_READY);
             isPlayerReleased = false;
 //            startTimer();
         }
@@ -334,7 +334,7 @@ public class MediaPlayerImp implements IPlayer {
                 public void onPrepared(MediaPlayer mp) {
                     mCurrentState = STATE_PREPARED;
                     if (mPlayerStateChangeListener != null) {
-                        mPlayerStateChangeListener.onPlayerStateChanged(playWhenReady, MomentContract.STATE_BUFFERING);
+                        mPlayerStateChangeListener.onPlayerStateChanged(playWhenReady, PlayerState.STATE_BUFFERING);
                     }
 
                     mVideoWidth = mp.getVideoWidth();
