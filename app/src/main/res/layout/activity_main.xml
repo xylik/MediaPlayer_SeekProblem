@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/videoPic"
+        android:layout_width="360dp"
+        android:layout_height="204dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextureView
+        android:id="@+id/videoView"
+        android:layout_width="360dp"
+        android:layout_height="204dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/preparationTimeTxtV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/videoView"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:lines="2"-->
+        <!--android:text="Preparation took:\nInitial buffer percent:"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:background="#ffffff"-->
+        <!--android:padding="4dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/firstFrameRenderedTxtV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/preparationTimeTxtV"-->
+        <!--android:text="Buffered percent:"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:background="#ffffff"-->
+        <!--android:padding="4dp"/>-->
+
+    <Button
+        android:id="@+id/seekBtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_below="@+id/videoView"
+        android:text="Seek"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/seekTime"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/seekBtn"
+        android:layout_alignBottom="@id/seekBtn"
+        android:hint="Set seek time in ms eg: 44237"
+        android:textSize="14sp"
+        android:gravity="center|left"
+        android:inputType="number"
+        />
+
+    <Spinner
+        android:id="@+id/fileChooser"
+        android:layout_toRightOf="@+id/seekTime"
+        android:layout_alignBottom="@id/seekTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/fileChooser"
+        android:text="Play/Pause"
+        android:textSize="18sp"/>
+</RelativeLayout>
