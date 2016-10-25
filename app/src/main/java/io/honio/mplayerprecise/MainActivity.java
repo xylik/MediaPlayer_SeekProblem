@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         fileChooser = (Spinner) findViewById(R.id.fileChooser);
         playPauseBtn = (Button) findViewById(R.id.playBtn);
 
-        vequenceVideoDir = Environment.getExternalStorageDirectory() + "/VequenceVideos/";
+        vequenceVideoDir = Environment.getExternalStorageDirectory() + "/FFmpegVideos/";
         ArrayAdapter<String> filesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, fileNames);
         fileChooser.setAdapter(filesAdapter);
         setListeners();
